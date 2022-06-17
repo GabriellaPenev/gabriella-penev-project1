@@ -8,27 +8,33 @@
     <title>Creative</title>
 
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/f73f12df72.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <!-- Skip link for accessibility -->
-    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
     <!-- Header and Nav -->
-    <header>
+    <header class="homePage">
         <div class="wrapper">
             <nav>
-                <ul class="nav1">
+                <ul class="navLinks firstNav">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Portfolio</a></li>
                 </ul>
 
-                    <h1 class="logo"><a href="./index.html">Creative</a></h1>
+                <h1 class="logo"><a href="./index.html">Creative</a></h1>
 
-                <ul class="nav2">
+                <ul class="navLinks">
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
@@ -38,7 +44,7 @@
         </div><!-- Wrapper END -->
     </header>
 
-    <main>
+    <main id="mainContent">
         <!-- Branding Section -->
         <section class="brandingSection">
             <div class="wrapper">
@@ -97,7 +103,7 @@
                 <div>
                     <div class="featureFlexContainer">
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
                         </div>
                         <div>
                             <h3>Unique Design</h3>
@@ -107,7 +113,7 @@
                     </div>
                     <div class="featureFlexContainer">
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-desktop"></i>
                         </div>
                         <div>
                             <h3>Retina Ready</h3>
@@ -117,7 +123,7 @@
                     </div>
                     <div class="featureFlexContainer">
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                         <div>
                             <h3>Advanced Options</h3>
@@ -130,7 +136,7 @@
                 <div>
                     <div class="featureFlexContainer">
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div>
                             <h3>SEO Marketing</h3>
@@ -140,7 +146,7 @@
                     </div>
                     <div class="featureFlexContainer">
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-bag-shopping"></i>
                         </div>
                         <div>
                             <h3>Ecommerce Ready</h3>
@@ -150,7 +156,7 @@
                     </div>
                     <div class="featureFlexContainer">
                         <div>
-                            <i class=""></i>
+                            <i class="fa-solid fa-face-smile"></i>
                         </div>
                         <div>
                             <h3>Customizable</h3>
@@ -208,14 +214,15 @@
         </section><!-- Portfolio Section END -->
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="wrapper">
             <div class="footerFlexContainer">
                 <h4>Contact Us</h4>
-                <p>6591 Orchard Street, NY 10002, United States <br> 
-                    Email: contact@onepro.co <br> 
-                    Phone 01: +00 (9) 123 3456 789 <br> 
-                    Phone 02: +00 (9) 123 3456 788 <br> 
+                <p>6591 Orchard Street, NY 10002, United States <br>
+                    Email: contact@onepro.co <br>
+                    Phone 01: +00 (9) 123 3456 789 <br>
+                    Phone 02: +00 (9) 123 3456 788 <br>
                     Fax: +00 (9) 643 6543 898</p>
                 <i class="facebook"></i>
                 <i class="twitter"></i>
@@ -243,7 +250,7 @@
         </div>
 
         <h5><a href="./index.html">Creative Agency</a></h5>
-    </footer>
+    </footer><!-- Footer END -->
 
 </body>
 

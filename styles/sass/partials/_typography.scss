@@ -1,0 +1,80 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: $tertiary; 
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+
+h1, h2, h3, h4, nav, button {
+    font-family: $headingFont;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.85rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+}
+
+h2, h3, h4 {
+    line-height: 24px;
+    letter-spacing: 1.8px;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+nav {
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+button {
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    padding: 0;
+    cursor: pointer;
+}
+
+ul, 
+li, 
+a, 
+input {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// MOVE THIS OUT OF TYPOGRAPHY AND INTO THE FOOTER AS IT'S NOT REALLY TYPE RELATED..****
+footer {
+    color: $primary;
+    background-color: $tertiary;
+}

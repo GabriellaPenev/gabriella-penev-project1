@@ -1,0 +1,42 @@
+// Skip link - take it off the screen
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    color: $tertiary;
+    z-index: 10;
+}
+
+// Nav
+nav {
+    letter-spacing: 0.3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navLinks li {
+    padding: 0 15px;
+}
+
+.firstNav li:first-child {
+    text-decoration: line-through;
+} 
+
+.navLinks button {
+    border: none;
+}
+
+.navLinks i {
+    font-size: 0.9rem;
+}
+
+h1 {
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+}
