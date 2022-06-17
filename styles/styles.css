@@ -251,6 +251,7 @@ body {
 
 h1, h2, h3, h4, nav, button {
   font-family: "Montserrat";
+  text-transform: uppercase;
   font-weight: normal;
   margin: 0;
   text-align: center;
@@ -326,7 +327,6 @@ img {
 }
 
 header {
-  text-transform: uppercase;
   padding: 50px 0;
 }
 
@@ -384,4 +384,126 @@ h1 {
   text-align: center;
   line-height: 24px;
   letter-spacing: 1.8px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.brandingSection {
+  background-color: #C3DAB7;
+  padding-top: 200px;
+}
+
+.brandingImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.brandingImages .deskImage {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.brandingImages .deskImage .circleImage {
+  position: absolute;
+  top: -94px;
+  left: -108px;
+}
+
+.brandFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+}
+.brandFlexContainer .brandingText {
+  width: 350px;
+  margin: 0 20px;
+}
+
+.chevronFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.chevronFlexContainer i {
+  font-size: 1.8rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.chevronFlexContainer i:hover {
+  opacity: 0.7;
+}
+
+.pastWorkFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 56%;
+}
+.pastWorkFlexContainer img {
+  border-radius: 50%;
+}
+.pastWorkFlexContainer p {
+  padding-top: 30px;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.featuresSection {
+  background-image: url(../assets/home-4.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.featuresSection .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featureFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin: 60px;
+}
+.featureFlexContainer h3 {
+  text-align: left;
+}
+.featureFlexContainer .icon {
+  font-size: 1.6rem;
+  padding: 0 30px;
+}
+.featureFlexContainer i {
+  border: solid #333333 2px;
+  border-radius: 50%;
+  padding: 15px;
 }
