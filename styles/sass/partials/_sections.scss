@@ -32,7 +32,7 @@ section {
     } 
 }
 
-// Past Work Section Styling
+// Past Work Section 
 .chevronFlexContainer {
     display: flex;
     justify-content:space-between;
@@ -42,7 +42,7 @@ section {
         transition: 0.7s;
     }
     i:hover {
-        opacity: 0.7;
+        opacity: 0.6;
     }
 }
 
@@ -58,7 +58,7 @@ section {
     p { 
         padding-top: 30px;
         font-style: italic;
-        opacity: 0.7;
+        opacity: 0.6;
     }
 }
 
@@ -67,27 +67,90 @@ section {
     background-image: url(../assets/home-4.jpeg);
     background-position: center;
     background-size: cover;
-    .wrapper {
-        display: flex;
-        // justify-content: flex-end;
-    }
-}
+        .splitFlexContainer {
+            display: flex;
+            width: 60%;
+            margin-left: 50%;
+            .iconText {
+                margin-left: 15px;
+            }
+        }
+    } 
 
 .featureFlexContainer {
     display: flex;
     text-align: left;
-    margin: 60px;
-    // width: 300px;
+    padding: 40px 20px 40px 0;
     h3 {
         text-align: left;
     }
-    .icon {
-        font-size: 1.6rem;
-        padding: 0 30px;
+    p {
+        opacity: 0.6;
     }
     i {
+        font-size: 1rem;
+        padding: 15px;
         border: solid $tertiary 2px;
         border-radius: 50%;
-        padding: 15px;
+    }
+}
+
+// Team Section
+.teamSection h2 {
+    padding-bottom: 100px;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.teamGallery {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    .team {
+        width: calc(( 100% / 4) - 30px);
+        margin: 15px;
+    }
+    .teamText {
+        width: calc(50% - 30px);
+        text-align: left;
+        background-color: blueviolet;
+        padding: 100px 10px 10px 40px;
+        margin: 15px;
+        min-height: 250px;
+        h4 {
+            text-align: left;
+        }
+    }
+}
+
+// Portfolio Section
+.portfolioSection {
+    height: 90vh;
+    background-color: $quaternary;
+    padding: 0; 
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+    }
+}
+
+.portfolioText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.portfolioImage {
+    min-width: 50vw;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
