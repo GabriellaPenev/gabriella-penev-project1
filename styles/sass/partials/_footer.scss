@@ -1,0 +1,66 @@
+
+footer {
+    padding: 100px 0 50px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        h4 {
+            margin-bottom: 30px;
+        }
+    }
+} 
+    
+.footerContact {
+    text-align: left;
+    h4 {
+        text-align: left;
+    }
+    i {
+        font-size: 0.8rem;
+        padding: 20px 20px 0 0;
+    }
+}
+
+.footerPosts ul {
+    list-style: initial;
+    text-align: left;
+    line-height: 28px;
+}
+
+.footerSubscribe {
+    text-align: right;
+    h4 {
+        text-align: right;
+    }
+    input {
+        font-family: $bodyFont;
+        padding-left: 10px;
+        border: none;
+        width: 75%;
+    }
+}
+
+.emailButton {
+    background-color: $quaternary;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.buttonFlexContainer {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.footerLogo {
+    border-top: solid 1px rgb(246, 246, 246, 0.1);
+    padding: 50px 0 0;
+    margin-top: 50px;
+    a {
+        text-transform: uppercase;
+        font-family: $headingFont;
+        letter-spacing: 0.4rem;
+        }
+}

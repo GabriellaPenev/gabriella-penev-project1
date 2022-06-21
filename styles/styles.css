@@ -317,6 +317,7 @@ footer {
 
 img {
   max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -470,6 +471,7 @@ section {
 }
 .pastWorkFlexContainer img {
   border-radius: 50%;
+  width: auto;
 }
 .pastWorkFlexContainer p {
   padding-top: 30px;
@@ -539,23 +541,32 @@ section {
 .teamGallery .teamText {
   width: calc(50% - 30px);
   text-align: left;
-  background-color: blueviolet;
-  padding: 100px 10px 10px 40px;
+  height: 285px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #F6F6F6;
+  padding: 40px 20px 20px 40px;
   margin: 15px;
-  min-height: 250px;
 }
 .teamGallery .teamText h4 {
   text-align: left;
 }
 
 .portfolioSection {
-  height: 90vh;
   background-color: #C3DAB7;
   padding: 0;
 }
 .portfolioSection .wrapper {
   width: 100%;
-  height: 100%;
+  max-width: 100%;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +574,7 @@ section {
 }
 
 .portfolioText {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,15 +588,96 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 50px;
+  padding: 50px;
+}
+.portfolioText p {
+  opacity: 0.6;
+  padding: 35px 0 30px 0;
+}
+
+.portfolioLink {
+  font-family: "Montserrat";
+  font-weight: bold;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 200px;
 }
 
 .portfolioImage {
-  min-width: 50vw;
-}
-.portfolioImage img {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+footer {
+  padding: 100px 0 50px 0;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+footer .wrapper h4 {
+  margin-bottom: 30px;
+}
+
+.footerContact {
+  text-align: left;
+}
+.footerContact h4 {
+  text-align: left;
+}
+.footerContact i {
+  font-size: 0.8rem;
+  padding: 20px 20px 0 0;
+}
+
+.footerPosts ul {
+  list-style: initial;
+  text-align: left;
+  line-height: 28px;
+}
+
+.footerSubscribe {
+  text-align: right;
+}
+.footerSubscribe h4 {
+  text-align: right;
+}
+.footerSubscribe input {
+  font-family: "Open Sans";
+  padding-left: 10px;
+  border: none;
+  width: 75%;
+}
+
+.emailButton {
+  background-color: #C3DAB7;
+  border: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.buttonFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 30px;
+}
+
+.footerLogo {
+  border-top: solid 1px rgba(246, 246, 246, 0.1);
+  padding: 50px 0 0;
+  margin-top: 50px;
+}
+.footerLogo a {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 0.4rem;
 }
