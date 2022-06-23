@@ -338,6 +338,13 @@ header {
   height: 100vh;
 }
 
+.blogPage {
+  background-image: url(../assets/blog-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .skipLink {
   position: absolute;
   left: -1000px;
@@ -375,6 +382,7 @@ nav {
 
 .navLinks button {
   border: none;
+  background: transparent;
 }
 
 .navLinks i {
@@ -667,7 +675,7 @@ footer .wrapper h4 {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   margin-top: 30px;
 }
 
