@@ -15,29 +15,39 @@ nav {
     align-items: center;
 }
 
-.navLinks {
+.mainNav {
     display: flex;
+    li {
+        padding: 0 10px;
+    }
+    button {
+        border: none;
+        background: transparent;
+    }
+    i {
+        font-size: 0.9rem;
+    }
 }
 
-.navLinks li {
-    padding: 0 15px;
+// For the line through effect on the HOME nav link, I modified this codepen: https://codepen.io/kevinSuttle/pen/aqVLeW?editors=1100 
+
+.lineThrough {
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 49%, black 50%, black 52%, transparent 53%, transparent 100%);
 }
 
-.firstNav li:first-child {
-    text-decoration: line-through;
-} 
-
-.navLinks button {
-    border: none;
-    background: transparent;
+.shoppingBag {
+    position: relative;
 }
 
-.navLinks i {
-    font-size: 0.9rem;
-}
-
-h1 {
+.counter {
+    width: 16px;
+    height: 16px;
+    font-size: 0.5rem;
+    background: $quaternary;
+    border-radius: 50%;
     text-align: center;
-    line-height: 24px;
-    letter-spacing: 1.8px;
+    line-height: 14px;
+    position: absolute;
+    top: 2px;
+    right: 0;
 }

@@ -2,7 +2,7 @@ section {
     padding: 100px 0;
 }
 
-// HOME PAGE SECTIONS
+// --- HOME PAGE SECTION STYLING ---
 
 // Branding Section
 .brandingSection {
@@ -171,9 +171,9 @@ section {
 .portfolioImage {
     width: 100%;
 }
+// --- HOME PAGE SECTION STYLING END ---
 
-// BLOG PAGE SECTIONS
-
+// --- BLOG PAGE SECTION STYLING ---
 // Blog Post Section
 .blogSection {
     text-align: left;
@@ -271,7 +271,6 @@ h6 {
 }
 
 // Blog Comments Section
-
 .blogCommentsFlexContainer {
     display: flex;
     text-align: left;
@@ -313,7 +312,7 @@ h6 {
     opacity: 1;
 }
 
-// I found details on how to make a triangular shape at this site: https://css-tricks.com/the-shapes-of-css/ which I modified for the following .triangle styling: 
+// I found details on making a triangular shape at: https://css-tricks.com/the-shapes-of-css/ which I modified for the following .triangle styling: 
 .triangle {
     width: 0;
     height: 0;
@@ -340,8 +339,13 @@ textarea {
     height: 150px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
-    margin: 30px 0;
+    margin: 30px 0 60px 0;
     outline: none;
+}
+
+.formInputs {
+    display: flex;
+    justify-content: space-between;
 }
 
 fieldset {
@@ -349,17 +353,13 @@ fieldset {
     text-align: left;
     padding: 0;
     margin: 0;
-    .formInputs {
-        display: flex;
-        justify-content: space-between;
-    } input {
+    input {
         border: none;
         border-bottom: 1px solid rgba(0, 0, 0, .2);
         text-align: left;
         width: calc((100% / 3) - 10px);
-        margin: 5px 0;
         padding: 10px 0;
-    }:focus {
+        }:focus {
         outline: none;
         font-weight: bold;
         border-bottom: 1.5px solid rgba(0, 0, 0);
@@ -370,6 +370,93 @@ fieldset {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .7);
     padding-bottom: 10px;
+    margin-bottom: 20px;
     background-color: transparent;
     font-weight: normal;
 }
+// --- BLOG PAGE SECTION STYLING END ---
+
+// --- CONTACT US SECTION STYLING ---
+// Contact Section
+.contactNav {
+    padding: 40px 0;
+}
+
+.contactPage {
+    background-image: url(../assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    h5 {
+        margin-top: 94px;
+        text-align: left;
+        line-height: 60px;
+    }::first-letter {
+        padding: 25px 0;
+        border-top: solid 3px black;
+    }
+}
+
+.contactSection {
+    padding-top: 0;
+    text-align: left;
+    h3, h4 {
+        text-align: left;
+    }
+    .contactDetails {
+        width: 50%;
+    }
+}
+
+.contactForm {
+    text-align: left;
+    h3 {
+        text-align: left;
+    }
+}
+
+.contactFlexContainer {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 80px;
+    i {
+        font-size: 2rem;
+    }
+    h4 {
+        letter-spacing: 6px;
+        padding-top: 14px;
+    }
+    p {
+        opacity: 0.6;
+    }
+}
+
+.connect {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    padding: 0 20px;
+    width: calc((100% / 3) - 40px);
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+.connect:last-child {
+    border: none;
+}
+
+// Contact Form Section 
+.contactForm {
+    padding-top: 0;
+    p {
+        opacity: 0.6;
+    }
+}
+
+// Contact Image Section 
+.contactImageSection {
+    background-image: url(../assets/contact-2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+// --- CONTACT US SECTION STYLING END ---
