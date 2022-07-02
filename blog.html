@@ -24,6 +24,24 @@
 
     <!-- Header and Nav -->
     <header class="blogPage">
+        <!-- Slide Out Nav -->
+        <div class="slideOutNav">
+            <nav>
+                <!-- Slide Out Menu -->
+                <label for="sideMenu"><i class="fa-solid fa-bars hamburgerBars"></i></label>
+                <input type="checkbox" id="sideMenu">
+                <ul class="slideOutMenu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="wrapper">
             <nav>
                 <ul class="mainNav">
@@ -38,10 +56,16 @@
                     <li><a href="#">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><button><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                    <li class="shoppingBag"><a href="#"><i class="fa-solid fa-solid fa-shopping-bag"></i><p class="counter">2</p></a></li>
+                    <li class="shoppingBag"><a href="#"><i class="fa-solid fa-solid fa-shopping-bag"></i>
+                            <p class="counter">2</p>
+                        </a></li>
                 </ul>
             </nav>
         </div><!-- Wrapper END -->
+        <div class="blogHeaderImage">
+            <img src="./assets/blog-1.jpeg"
+                alt="A computer monitor, phone, tablet, laptop, watch, speaker, and a glass vase with a green leaf in it, on a white table.">
+        </div>
     </header>
 
     <main id="mainContent">
@@ -116,11 +140,11 @@
                         development user experience ecosystem. Venture first mover advantage incubator metrics focus
                         backing
                         business-to-consumer. Innovator advisor incubator MVP.</p>
-                    </div>
-                    <p class="blogSocials">Share: <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </p>
+                </div>
+                <p class="blogSocials">Share: <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </p>
             </div><!-- Wrapper END -->
         </section><!-- Blog Post Section END -->
 
@@ -130,11 +154,13 @@
                 <h6>Related posts</h6>
                 <div class="blogGalleryFlexContainer">
                     <div class="blogGalleryImageContainer">
-                        <img src="./assets/blog-3.jpeg" alt="A laptop, eye glasses, a desk lamp, and three succulents in white pots on a white office desk, with a window looking out onto a building in the background.">
+                        <img src="./assets/blog-3.jpeg"
+                            alt="A laptop, eye glasses, a desk lamp, and three succulents in white pots on a white office desk, with a window looking out onto a building in the background.">
                         <p>July 25, 2018</p>
                     </div>
                     <div class="blogGalleryImageContainer">
-                        <img src="./assets/blog-4.jpeg" alt="Plants, candles, a decorative wooden letter 'A', and a black wire metal grid resting on a white storage unit.">
+                        <img src="./assets/blog-4.jpeg"
+                            alt="Plants, candles, a decorative wooden letter 'A', and a black wire metal grid resting on a white storage unit.">
                         <p>July 26, 2018</p>
                     </div>
                     <div class="blogGalleryImageContainer">
@@ -202,17 +228,18 @@
             <div class="footerContact">
                 <h4><a href="./contact.html">Contact Us</a></h4>
                 <p>6591 Orchard Street, NY 10002, United States <br>
-                    <a href="mailto:contact@onepro.co">Email: contact@onepro.co</a><br> 
+                    <a href="mailto:contact@onepro.co">Email: contact@onepro.co</a><br>
                     Phone 01: +00 (9) 123 3456 789 <br>
                     Phone 02: +00 (9) 123 3456 788 <br>
-                    Fax: +00 (9) 643 6543 898</p>
+                    Fax: +00 (9) 643 6543 898
+                </p>
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
 
             <div class="footerPosts">
-                <h4><a href="./blog.html">Recent Posts</a></h4> 
+                <h4><a href="./blog.html">Recent Posts</a></h4>
                 <ul>
                     <li><a href="#">Conversion hackathon partner</a></li>
                     <li><a href="#">Network channels entrepreneur</a></li>
@@ -239,4 +266,5 @@
         </div>
     </footer><!-- Footer END -->
 </body>
+
 </html>

@@ -1,23 +1,14 @@
 
-// Home Page Header 
+// Home, Blog, and Contact Page Headers 
 
-header {
-    padding: 40px 0;
+.mainHeaderImage img,
+.blogHeaderImage img,
+.contactHeaderImage img {
+    object-fit: contain;
+    width: 100%;
 }
 
-.homePage {
-    background-image: url(../assets/home-1.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    
-}
-
-// Blog Page Header Styles
-
-.blogPage {
-    background-image: url(../assets/blog-1.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+// Contact Page Header
+.contactHeaderImage {
+    padding-top: 100px;
 }

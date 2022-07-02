@@ -85,7 +85,6 @@ section {
             display: flex;
             width: 65%;
             flex-wrap: wrap;
-            // justify-content: flex-end;
             margin-left: 50%;
             .iconText {
                 margin-left: 15px;
@@ -401,20 +400,6 @@ fieldset {
 
 // --- CONTACT US SECTION STYLING ---
 // Contact Section
-.contactPage {
-    background-image: url(../assets/contact-1.jpeg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    h5 {
-        margin-top: 94px;
-        text-align: left;
-        line-height: 60px;
-    }::first-letter {
-        padding: 25px 0;
-        border-top: solid 3px black;
-    }
-}
-
 .contactSection {
     padding-top: 0;
     text-align: left;
@@ -427,10 +412,26 @@ fieldset {
     }  
 }
 
+.contactUs {
+    margin-bottom: 140px;
+    h5 {
+        text-align: left;
+        line-height: 60px;
+        position: absolute;
+        top: 190px;
+    }::first-letter {
+        padding: 10px 0;
+        border-top: solid 3px black;
+    }
+}    
+
 .contactForm {
     text-align: left;
     h3 {
         text-align: left;
+    }
+    .formInputs {
+        padding-top: 80px;
     }
 }
 
@@ -474,9 +475,8 @@ fieldset {
 
 // Contact Image Section 
 .contactImageSection {
-    background-image: url(../assets/contact-2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 75vh;
+    object-fit: contain;
+    width: 100%;
+    padding: 0;
 }
 // --- CONTACT US SECTION STYLING END ---

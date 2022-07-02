@@ -57,16 +57,92 @@
         margin-top: 50px;
     }
 
-    // Blog Page
-    .blogPage {
-        height: 60vh;
+    // Contact Page
+    .contactUs h5 {
+        line-height: 40px;
     }
+
 }
 
-
+ 
 @media (max-width: 900px) {
 
+    // Home Page
+    .logo {
+        width: 100%;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .verticalBrandingLine {
+        height: 60px;
+        top: 0;
+    }
+
+    // Slide Out Nav
+    label[for="sideMenu"], 
+    input[for="sideMenu"] {
+        display: block;
+        position: fixed;
+        z-index: 20;
+        margin-top: 28px;
+    }
+
+    .hamburgerBars {
+        font-size: 1.4rem;
+        padding: 10px;
+        margin-left: 5px;
+        background-color: $quaternary;
+        border-radius: 15px;
+        border: 2px solid $secondary;
+    }
+
+    .slideOutMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: fixed;
+        width: 188px; 
+        left: -188px; 
+        z-index: 10;
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 396px;
+        transition: 1s;
+        background-color: $secondary;
+        font-size: 0.7rem;
+        border-radius: 15px;
+
+    }
+
+    ul.slideOutMenu a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        transition: 0.3s;
+        border-bottom: 0.5px $primary solid;
+        border-radius: 15px;
+    }
+    
+    .slideOutMenu a:hover,
+    .slideOutMenu a:focus {
+        font-weight: bold;
+        background-color: $quaternary;
+        transition: 0.7s; 
+    }
+    input[type="checkbox"]:checked + .slideOutMenu {
+        left: 0;  
+    }  
+
     // Blog Page
+    .blogPage h1 a {
+        padding: 0 20px;
+        background-color: $primary;
+        border-radius: 10px;
+    }
+
     .blogHeading {
         flex-direction: column;
     }
@@ -100,10 +176,6 @@
 @media (max-width: 800px) {
 
     // Home Page
-    .homePage {
-        height: 60vh;
-    }
-
     .featuresSection .splitFlexContainer {
         margin-left: 25%;
     }
@@ -162,7 +234,19 @@
         width: 100%;
         margin: 10px 0;
     }
+
+    // Contact Page
+    .contactUs h5 {
+        position:initial;
+        }
+
+    .contactUs {
+    margin-bottom: 0;
+    }
     
+    .contactForm .formInputs {
+        padding-top: 20px;
+    }
 }
 
 
@@ -227,4 +311,8 @@
         padding: 30px;
     }
 
+    // Blog Page
+    .blogPage h1 a {
+        padding: 0 3px;
+    }
 }

@@ -13,10 +13,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 40px;
+    width: 80%;
 }
 
 .mainNav {
     display: flex;
+    
     li {
         padding: 0 10px;
     }
@@ -30,7 +35,6 @@ nav {
 }
 
 // For the line through effect on the HOME nav link, I modified this codepen: https://codepen.io/kevinSuttle/pen/aqVLeW?editors=1100 
-
 .lineThrough {
     background-image: linear-gradient(to bottom, transparent 0%, transparent 49%, black 50%, black 52%, transparent 53%, transparent 100%);
 }
@@ -52,7 +56,15 @@ nav {
     right: 0;
 }
 
-// Contact Page Nav Styling
-.contactNav {
-    padding: 40px 0;
+// Slide Out Nav
+label[for="sideMenu"], 
+input[for="sideMenu"] {
+    display: none;
+}
+input[type="checkbox"] {
+    display: none;  
+}
+
+.slideOutMenu {
+    display: none;
 }

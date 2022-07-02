@@ -281,7 +281,7 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
   margin: 20px 0;
   line-height: 40px;
 }
@@ -332,22 +332,16 @@ img {
   margin: 0 auto;
 }
 
-header {
-  padding: 40px 0;
+.mainHeaderImage img,
+.blogHeaderImage img,
+.contactHeaderImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }
 
-.homePage {
-  background-image: url(../assets/home-1.jpeg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.blogPage {
-  background-image: url(../assets/blog-1.jpeg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+.contactHeaderImage {
+  padding-top: 100px;
 }
 
 .skipLink {
@@ -369,6 +363,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: transparent;
+  position: absolute;
+  top: 40px;
+  width: 80%;
 }
 
 .mainNav {
@@ -409,8 +407,17 @@ nav {
   right: 0;
 }
 
-.contactNav {
-  padding: 40px 0;
+label[for=sideMenu],
+input[for=sideMenu] {
+  display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.slideOutMenu {
+  display: none;
 }
 
 section {
@@ -879,21 +886,6 @@ fieldset :focus {
   font-weight: normal;
 }
 
-.contactPage {
-  background-image: url(../assets/contact-1.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.contactPage h5 {
-  margin-top: 94px;
-  text-align: left;
-  line-height: 60px;
-}
-.contactPage ::first-letter {
-  padding: 25px 0;
-  border-top: solid 3px black;
-}
-
 .contactSection {
   padding-top: 0;
   text-align: left;
@@ -906,11 +898,28 @@ fieldset :focus {
   opacity: 0.6;
 }
 
+.contactUs {
+  margin-bottom: 140px;
+}
+.contactUs h5 {
+  text-align: left;
+  line-height: 60px;
+  position: absolute;
+  top: 190px;
+}
+.contactUs ::first-letter {
+  padding: 10px 0;
+  border-top: solid 3px black;
+}
+
 .contactForm {
   text-align: left;
 }
 .contactForm h3 {
   text-align: left;
+}
+.contactForm .formInputs {
+  padding-top: 80px;
 }
 
 .contactFlexContainer {
@@ -961,10 +970,10 @@ fieldset :focus {
 }
 
 .contactImageSection {
-  background-image: url(../assets/contact-2.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  padding: 0;
 }
 
 footer {
@@ -1113,11 +1122,94 @@ footer .wrapper h4 {
     margin-top: 50px;
   }
 
-  .blogPage {
-    height: 60vh;
+  .contactUs h5 {
+    line-height: 40px;
   }
 }
 @media (max-width: 900px) {
+  .logo {
+    width: 100%;
+  }
+
+  .mainNav {
+    display: none;
+  }
+
+  .verticalBrandingLine {
+    height: 60px;
+    top: 0;
+  }
+
+  label[for=sideMenu],
+input[for=sideMenu] {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    margin-top: 28px;
+  }
+
+  .hamburgerBars {
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #C3DAB7;
+    border-radius: 15px;
+    border: 2px solid #F6F6F6;
+  }
+
+  .slideOutMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: fixed;
+    width: 188px;
+    left: -188px;
+    z-index: 10;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 396px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    background-color: #F6F6F6;
+    font-size: 0.7rem;
+    border-radius: 15px;
+  }
+
+  ul.slideOutMenu a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: 0.5px #FFFFFF solid;
+    border-radius: 15px;
+  }
+
+  .slideOutMenu a:hover,
+.slideOutMenu a:focus {
+    font-weight: bold;
+    background-color: #C3DAB7;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+  }
+
+  input[type=checkbox]:checked + .slideOutMenu {
+    left: 0;
+  }
+
+  .blogPage h1 a {
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+  }
+
   .blogHeading {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1153,10 +1245,6 @@ footer .wrapper h4 {
   }
 }
 @media (max-width: 800px) {
-  .homePage {
-    height: 60vh;
-  }
-
   .featuresSection .splitFlexContainer {
     margin-left: 25%;
   }
@@ -1227,6 +1315,18 @@ footer .wrapper h4 {
     width: 100%;
     margin: 10px 0;
   }
+
+  .contactUs h5 {
+    position: initial;
+  }
+
+  .contactUs {
+    margin-bottom: 0;
+  }
+
+  .contactForm .formInputs {
+    padding-top: 20px;
+  }
 }
 @media (max-width: 500px) {
   .featuresSection .splitFlexContainer {
@@ -1283,5 +1383,9 @@ footer .wrapper h4 {
 
   .portfolioText p {
     padding: 30px;
+  }
+
+  .blogPage h1 a {
+    padding: 0 3px;
   }
 }
