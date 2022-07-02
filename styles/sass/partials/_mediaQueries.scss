@@ -1,6 +1,6 @@
 @media (max-width: 1100px) {
-    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
 
+        // Home Page
     .featuresSection .splitFlexContainer {
         width: 100%;
         margin-left: 40%;
@@ -29,8 +29,7 @@
             width: calc((100% / 3) - 30px);
     }
 
-
-    // Footer Media Queries
+    // Footer
     footer {
         padding: 20px 0 50px 0;        
         .wrapper {
@@ -58,10 +57,52 @@
         margin-top: 50px;
     }
 
+    // Blog Page
+    .blogPage {
+        height: 60vh;
+    }
 }
-    
+
+
+@media (max-width: 900px) {
+
+    // Blog Page
+    .blogHeading {
+        flex-direction: column;
+    }
+
+    .date p:nth-child(1),
+    .date p:nth-child(2) {
+        margin-left: 0;
+    }
+
+    // Contact Page
+    .contactPage h5 {
+        margin-bottom: 0;
+    }
+
+    .contactSection .contactDetails {
+        width: 100%;
+    }
+
+    .contactFlexContainer {
+        flex-direction: column;
+        margin-top: 30px;
+        .connect {
+        border: none;
+        width: 100%;
+        padding: 10px 0;
+        height: 150px;
+        }
+    }
+}
+
 @media (max-width: 800px) {
-    /* all of our styles for TABLET devices will go within this breakpoint */
+
+    // Home Page
+    .homePage {
+        height: 60vh;
+    }
 
     .featuresSection .splitFlexContainer {
         margin-left: 25%;
@@ -83,7 +124,6 @@
     .brandingText:nth-child(2) > h3:nth-child(1) {
         margin-top: 20px;
     }
-
 
     .brandingSection {
         padding-top: 150px;
@@ -107,12 +147,28 @@
     .portfolioLink {
         width: 80%;
     }
+
+    // Blog Page
+    .blogGalleryFlexContainer {
+        flex-direction: column;
+        }
+    
+    // Form on Blog and Contact Pages
+    .formInputs {
+        flex-direction: column;
+        }
+
+    fieldset input {
+        width: 100%;
+        margin: 10px 0;
+    }
     
 }
 
 
 @media (max-width: 500px) {
-    /* all of our styles for MOBILE devices will go within this breakpoint */
+
+    // Home Page
     .featuresSection .splitFlexContainer {
         margin-left: 0;
     }
@@ -128,15 +184,19 @@
     .pastWorkSection .wrapper {
         width: 90%
     }
-
-   
+    
+    // Blog Page
+    .blogCommentsFlexContainer .triangle {
+        margin: 20px 0 0 5px;
+    }
 
 }
 
 
 
 @media (max-width: 380px) {
-    /* all of our styles for SMALL MOBILE devices will go within this breakpoint */
+
+    // Home Page
     .featureFlexContainer {
         flex-direction: column;
         align-items: center;
@@ -157,6 +217,14 @@
 
     .team h4 {
         margin: 50px 0 auto;
+    }
+
+    .portfolioText {
+        margin: 40px 0;
+    }
+
+    .portfolioText p {
+        padding: 30px;
     }
 
 }

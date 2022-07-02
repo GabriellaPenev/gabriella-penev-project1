@@ -281,11 +281,13 @@ h4 {
 }
 
 h5 {
-  font-size: 3rem;
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  margin: 20px 0;
+  line-height: 40px;
 }
 
 h6 {
-  font-size: 1.6rem;
+  font-size: clamp(1.1rem, 7vw, 1.6rem);
 }
 
 nav {
@@ -664,10 +666,6 @@ section {
   text-align: left;
 }
 
-h5 {
-  margin: 20px 0;
-}
-
 .blogHeading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,6 +697,7 @@ h5 {
 .adminImage img {
   border-radius: 50%;
   width: 65px;
+  min-width: 65px;
 }
 
 .admin,
@@ -1047,7 +1046,6 @@ footer .wrapper h4 {
 }
 
 @media (max-width: 1100px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
   .featuresSection .splitFlexContainer {
     width: 100%;
     margin-left: 40%;
@@ -1114,9 +1112,51 @@ footer .wrapper h4 {
   .footerLogo {
     margin-top: 50px;
   }
+
+  .blogPage {
+    height: 60vh;
+  }
+}
+@media (max-width: 900px) {
+  .blogHeading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .date p:nth-child(1),
+.date p:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .contactPage h5 {
+    margin-bottom: 0;
+  }
+
+  .contactSection .contactDetails {
+    width: 100%;
+  }
+
+  .contactFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .contactFlexContainer .connect {
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    height: 150px;
+  }
 }
 @media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
+  .homePage {
+    height: 60vh;
+  }
+
   .featuresSection .splitFlexContainer {
     margin-left: 25%;
   }
@@ -1168,9 +1208,27 @@ footer .wrapper h4 {
   .portfolioLink {
     width: 80%;
   }
+
+  .blogGalleryFlexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .formInputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  fieldset input {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 @media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
   .featuresSection .splitFlexContainer {
     margin-left: 0;
   }
@@ -1186,9 +1244,12 @@ footer .wrapper h4 {
   .pastWorkSection .wrapper {
     width: 90%;
   }
+
+  .blogCommentsFlexContainer .triangle {
+    margin: 20px 0 0 5px;
+  }
 }
 @media (max-width: 380px) {
-  /* all of our styles for SMALL MOBILE devices will go within this breakpoint */
   .featureFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1214,5 +1275,13 @@ footer .wrapper h4 {
 
   .team h4 {
     margin: 50px 0 auto;
+  }
+
+  .portfolioText {
+    margin: 40px 0;
+  }
+
+  .portfolioText p {
+    padding: 30px;
   }
 }

@@ -45,11 +45,13 @@ h4 {
 }
 
 h5 {
-    font-size: 3rem;
+    font-size: clamp(1.7rem, 4vw, 2.8rem);
+    margin: 20px 0;
+    line-height: 40px;
 }
 
 h6 {
-    font-size: 1.6rem;
+    font-size: clamp(1.1rem, 7vw, 1.6rem);
 }
 
 nav {

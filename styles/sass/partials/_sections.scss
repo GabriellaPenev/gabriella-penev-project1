@@ -205,10 +205,6 @@ section {
     text-align: left;
 }
 
-h5 {
-    margin: 20px 0;
-}
-
 .blogHeading {
     display: flex;
     justify-content: space-between;
@@ -233,6 +229,7 @@ h5 {
 .adminImage img {
     border-radius: 50%;
     width: 65px;
+    min-width: 65px;
 }
 
 .admin, 
