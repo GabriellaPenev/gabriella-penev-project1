@@ -351,13 +351,12 @@ img {
 h1 {
   padding: 0 110px;
 }
-
-.verticalHeaderLine {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  height: 60px;
-  position: absolute;
-  left: 50%;
-  bottom: 0%;
+h1 a {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+h1 :hover {
+  font-size: 1.9rem;
 }
 
 .skipLink {
