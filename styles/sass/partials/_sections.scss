@@ -11,14 +11,6 @@ section {
     position: relative;
 }
 
-.verticalBrandingLine {
-    border-left: 1px solid rgba(0, 0, 0, .2);
-    height: 120px;
-    position:absolute;
-    left: 50%;
-    top: -60px;
-}
-
 .brandingImages {    
     display: flex;
     justify-content: center;
@@ -41,7 +33,6 @@ section {
 
 @keyframes spin { 
     100% { 
-        -webkit-transform: rotate(360deg); 
         transform:rotate(360deg); 
     }
 }
@@ -64,9 +55,12 @@ section {
     i {
         font-size: 1.8rem;
         transition: 0.7s;
-    &:hover {
-        opacity: 0.6;
+        &:hover {
+            opacity: 0.6;
         }   
+        &:focus {
+            opacity: 0.6;
+        }
     }
 }
 
@@ -170,6 +164,17 @@ section {
     }
 }
 
+.galleryRowOne, 
+.galleryRowTwo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.galleryRowTwo {
+    align-items: center;
+}
+
 // Portfolio Section
 .portfolioSection {
     background-color: $quaternary;
@@ -191,7 +196,7 @@ section {
     p {
         opacity: 0.6; 
         padding: 35px 30px;
-        width: 95%;
+        width: 80%;
     }
 }
 
@@ -392,7 +397,8 @@ fieldset {
         text-align: left;
         width: calc((100% / 3) - 10px);
         padding: 10px 0;
-        }:focus {
+        }
+        :focus {
         outline: none;
         font-weight: bold;
         border-bottom: 1.5px solid rgba(0, 0, 0);
@@ -430,7 +436,8 @@ fieldset {
         line-height: 60px;
         position: absolute;
         top: 190px;
-    }::first-letter {
+    }
+    ::first-letter {
         padding: 10px 0;
         border-top: solid 3px black;
     }

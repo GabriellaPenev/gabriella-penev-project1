@@ -14,10 +14,25 @@
 }
 
 h1 {
-    padding: 0 110px;
-    a {transition: .7s; 
+    padding: 0 100px;
+    a { transition: .5s; 
     }
-    :hover { 
-        font-size: 1.9rem;
+    &:hover { 
+        font-size: 1.95rem;
+    }
+    &:focus {
+        font-size: 1.95rem;
+    }
+}
+
+header {
+    position: relative;
+    .line {
+        border-left: 1px solid rgba(0, 0, 0, .2);
+        height: 120px;
+        position:absolute;
+        left: 50%;
+        bottom: -60px;
+        z-index: 20;
     }
 }

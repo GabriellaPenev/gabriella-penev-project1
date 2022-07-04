@@ -349,14 +349,29 @@ img {
 }
 
 h1 {
-  padding: 0 110px;
+  padding: 0 100px;
 }
 h1 a {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-h1 :hover {
-  font-size: 1.9rem;
+h1:hover {
+  font-size: 1.95rem;
+}
+h1:focus {
+  font-size: 1.95rem;
+}
+
+header {
+  position: relative;
+}
+header .line {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  z-index: 20;
 }
 
 .skipLink {
@@ -387,6 +402,7 @@ nav {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  z-index: 30;
 }
 
 .mainNav {
@@ -450,14 +466,6 @@ section {
   position: relative;
 }
 
-.verticalBrandingLine {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  height: 120px;
-  position: absolute;
-  left: 50%;
-  top: -60px;
-}
-
 .brandingImages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,14 +498,14 @@ section {
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 .brandFlexContainer {
@@ -531,6 +539,9 @@ section {
   transition: 0.7s;
 }
 .chevronFlexContainer i:hover {
+  opacity: 0.6;
+}
+.chevronFlexContainer i:focus {
   opacity: 0.6;
 }
 
@@ -659,6 +670,22 @@ section {
   margin: 0;
 }
 
+.galleryRowOne,
+.galleryRowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.galleryRowTwo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .portfolioSection {
   background-color: #C3DAB7;
   padding: 0;
@@ -691,7 +718,7 @@ section {
 .portfolioText p {
   opacity: 0.6;
   padding: 35px 30px;
-  width: 95%;
+  width: 80%;
 }
 
 .portfolioLink {
@@ -1121,7 +1148,7 @@ footer .wrapper h4 {
   }
 
   .teamGallery .team {
-    width: calc(33.3333333333% - 30px);
+    width: calc(50% - 30px);
   }
 
   footer {
@@ -1165,17 +1192,15 @@ footer .wrapper h4 {
   }
 }
 @media (max-width: 900px) {
-  .logo {
+  header .logo {
     width: 100%;
+  }
+  header .line {
+    height: 60px;
   }
 
   .mainNav {
     display: none;
-  }
-
-  .verticalBrandingLine {
-    height: 60px;
-    top: 0;
   }
 
   label[for=sideMenu],
@@ -1184,6 +1209,7 @@ input[for=sideMenu] {
     position: fixed;
     z-index: 20;
     margin-top: 28px;
+    cursor: pointer;
   }
 
   .hamburgerBars {
@@ -1283,6 +1309,10 @@ input[for=sideMenu] {
   }
 }
 @media (max-width: 800px) {
+  h1 {
+    padding: 0;
+  }
+
   .featuresSection .splitFlexContainer {
     margin-left: 25%;
   }
@@ -1386,6 +1416,16 @@ input[for=sideMenu] {
   .blogCommentsFlexContainer .triangle {
     margin: 20px 0 0 5px;
   }
+
+  .blogLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media (max-width: 380px) {
   .featureFlexContainer {
@@ -1425,5 +1465,24 @@ input[for=sideMenu] {
 
   .blogPage h1 a {
     padding: 0 3px;
+  }
+
+  .blogId {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blogId p {
+    margin: 0;
+  }
+
+  .blogLinks {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
