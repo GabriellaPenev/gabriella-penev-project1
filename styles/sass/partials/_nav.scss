@@ -16,12 +16,15 @@ nav {
     background-color: transparent;
     position: absolute;
     top: 40px;
-    width: 80%;
+}
+
+.topNav {
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .mainNav {
     display: flex;
-    
     li {
         padding: 0 10px;
     }

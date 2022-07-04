@@ -8,7 +8,19 @@
     width: 100%;
 }
 
-// Contact Page Header
+// Contact Page Header 
 .contactHeaderImage {
     padding-top: 100px;
+}
+
+h1 {
+    padding: 0 110px;
+}
+
+.verticalHeaderLine {
+        border-left: 1px solid rgba(0, 0, 0, .2);
+        height: 60px;
+        position:absolute;
+        left: 50%;
+        bottom: 0%;
 }
