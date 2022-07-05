@@ -85,7 +85,7 @@
     input[for="sideMenu"] {
         display: block;
         position: fixed;
-        z-index: 20;
+        z-index: 40;
         margin-top: 28px;
         cursor: pointer;
     }
@@ -106,7 +106,7 @@
         position: fixed;
         width: 188px; 
         left: -188px; 
-        z-index: 10;
+        z-index: 40;
         font-size: 1.4rem;
         text-align: center;
         margin-top: 396px;
